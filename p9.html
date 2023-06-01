@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>MARQUEE TAG..!</title>
+        <style>
+            marquee{
+                background-color: grey;
+                color: white;
+                padding: 20px;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>Marquee Tag..!</h1>
+        </center>
+        <marquee scrollamount="20" id="test">This is a marquee tag..!</marquee>
+
+        <script>
+document.getElementById("test").onmouseover = function(){
+    document.getElementById("test").stop();
+
+}
+document.getElementById("test").onmouseleave = function(){
+    document.getElementById("test").start();
+}
+        </script>
+    </body>
+</html>
